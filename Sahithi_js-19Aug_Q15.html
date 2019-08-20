@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Highlighting the bold words of a paragraph</title>
+</head>
+<body>
+	<p>This is the page which <b>highlights the bold words </b>of a paragraph</p>
+	<button onclick="highlighting()">click here..</button>
+	<script>
+		function highlighting(){
+			var a=document.getElementByTagName("b");
+			for(var i=0;i<a.length;i++)
+			{
+				a[i].style.backgroundColor="red";
+			}
+		}
+	</script>
+</body>
+</html>

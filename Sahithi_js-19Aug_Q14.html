@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Finding whether string starts with specified string or not...</title>
+</head>
+<body>
+<button id="b1" onclick="specify()">submit</button>
+<!-- <p id="demo">click submit to get answer..</p> -->
+<script>
+    function specify()
+    {
+     var str=prompt("Enter a string");
+     var str1=prompt("Enter a substring");
+     var i,j,count=0;
+     for(i=0,j=0;i<str1.length;i++,j++)
+     {
+        if(str[i]!=str1[j])
+        {
+          break;
+        }
+        else
+        {
+          count++;
+        }
+     }
+     if(count==str1.length)
+     {
+      document.write("string starts with specified string");
+     }
+     else
+     {
+      document.write("string not starts with specified string");
+     }
+
+      }
+</script> 
+</body>
+</html>

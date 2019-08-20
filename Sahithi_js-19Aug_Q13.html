@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button id="b1" onclick="function3()">click here...</button>
+<p id="demo">click submit to get answer..</p>
+<script>
+    function function3()
+    {
+      var s1=prompt("Enter a string");
+      var n=prompt("Enter a value between 0 and "+s1.length);
+      if(n>s1.length)
+      {
+        alert("Enter a number within the size of a string");
+      }
+      if (s1[n] == s1[n].toUpperCase()) {
+      document.getElementById("demo").innerHTML="character is in uppercase";
+      }
+      else{
+          document.getElementById("demo").innerHTML="character is not in uppercase";
+      }
+    }
+</script> 
+</body>
+</html>

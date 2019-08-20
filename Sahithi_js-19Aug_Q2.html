@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="t1">
+<button id="b1" onclick="function1()">submit</button>
+<p id="demo">click submit to get answer..</p>
+<script>
+    function function1()
+    {
+    	
+		var a=document.getElementById("t1").value;
+    	document.getElementById("demo").innerHTML=Array.from(String(a), Number);
+    	
+   }
+</script> 
+</body>
+</html>

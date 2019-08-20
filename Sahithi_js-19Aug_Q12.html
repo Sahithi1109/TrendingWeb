@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>current day and time..</title>
+</head>
+<body>
+<button id="b1" onclick="currDayAndTime()">submit</button>
+<p id="demo">click submit to get current day and time</p>
+<script>
+    function currDayAndTime()
+    {
+      var today = new Date();
+      var day = today.getDay();
+      var listOfDays = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+      var hour = today.getHours();
+      var minute = today.getMinutes();
+      var second = today.getSeconds();
+      var ampm = (hour >= 12)? " PM ":" AM ";
+      hour = (hour >= 12)? hour - 12: hour;
+      document.getElementById("demo")="Today : "+listOfDays(day);
+      document.getElementById("demo")="Time is : "+hour + " : " + minute + " : " + second+" "+ampm+".";
+   }
+</script> 
+</body>
+</html>

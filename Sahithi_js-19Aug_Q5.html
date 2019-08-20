@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Find the longest word in the string...</title>
+</head>
+<body>
+<!-- <button id="b1" onclick="LongestWord()">submit</button> -->
+<p id="demo">click submit to get answer..</p>
+<script>
+   
+     var str=prompt("Enter a string");
+     document.getElementById("demo").innerHTML=LongestWord(str);
+      function LongestWord(str)
+    {
+     var max=0,count,i;
+     for(i=0;i<str.length;i++)
+     {
+        count=0;
+        while(str[i]!=' ')
+        {
+          count++;
+          i++;
+        }
+        if(count>max)
+        {
+          max=count;
+          x=i;
+        }
+     }
+     document.write(str[x-max]);
+     for(i=0;i<str.length;i++)
+     {
+      document.write(str[i]);
+     }
+     
+   }
+     
+</script> 
+</body>
+</html>

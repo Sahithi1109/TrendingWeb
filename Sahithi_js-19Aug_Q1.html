@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="t1">
+<button id="b1" onclick="function1()">submit</button>
+<p id="demo">click submit to get answer..</p>
+<script>
+    function function1()
+    {
+    	var random = Math.random( ); 
+		var a=document.getElementById("t1").value;
+    	if(a==random)
+     	{
+  	 		document.getElementById("demo").innerHTML="Right On!";
+    	}
+    	else
+    	{
+    		document.getElementById("demo").innerHTML="Unlucky :(";
+    	}
+   }
+</script> 
+</body>
+</html>
