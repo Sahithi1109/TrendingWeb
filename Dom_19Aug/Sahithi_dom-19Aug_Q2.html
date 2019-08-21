@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom2</title>
+</head>
+<body>
+	<p id="p1">This page is to change the content</p>
+	<button onclick="replace()">Click</button>
+	<script>
+		function replace(){
+			var a=prompt("Enter Something");
+			// console.log(a);
+			document.getElementById("p1").innerHTML=a;
+		}
+	</script>
+</body>
+</html>

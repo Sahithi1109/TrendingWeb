@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<select id="op">
+		<option value="1">one</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+		<option value="4">Four</option>
+	</select>
+	<button onclick="disable()">disable</button>
+	
+	<script>
+		
+		function disable(){
+			var a=prompt("Enter a value");
+			var x=document.getElementById("op").getElementsByTagName("option");
+			for(var i=0;i<x.length;i++)
+			{
+				if(x[i].value==a){
+					x[i].disabled=true;
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>

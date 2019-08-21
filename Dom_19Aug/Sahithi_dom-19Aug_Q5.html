@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<select id="op">
+		<option>one</option>
+		<option>Two</option>
+		<option>Three</option>
+		<option>Four</option>
+	</select>
+	<button onclick="enable()">enable</button>
+	<button onclick="disable()">disable</button>
+	<script>
+		var x=document.getElementById("op");
+		function enable(){
+				x.disabled=false;
+		}
+		function disable(){
+			x.disabled=true;
+		}
+	</script>
+</body>
+</html>
