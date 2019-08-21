@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom3</title>
+</head>
+<body>
+	<a href="www.google.com">Google</a><br>
+	<a href="www.w3schools.com">w3schools</a><br>
+	<a href="www.amazon.com">amazon</a><br>
+	<a href="www.flipkart.com">flipkart</a><br>
+	<a href="www.ola.com">ola</a><br>
+	<!-- <p id="p1">This page is to change the content</p> -->
+	<button onclick="fetchTheLast()">Click</button>
+	<p id="p1"></p>
+	<script>
+		function fetchTheLast(){
+			var b=document.getElementsByTagName("a");
+			var l=b.length;
+			console.log(l);
+			var last=b[l-1].getAttribute("href");
+			console.log(last);
+			document.getElementById("p1").innerHTML=last;
+		}
+	</script>
+</body>
+</html>
